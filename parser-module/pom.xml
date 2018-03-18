@@ -4,11 +4,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.example</groupId>
-	<artifactId>htmlParser</artifactId>
-	<version>0.0.1-alpha</version>
+	<artifactId>parser-module</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>htmlParser</name>
+	<name>parser-module</name>
 	<description>Demo project for Spring Boot</description>
 
 	<parent>
@@ -32,6 +32,11 @@
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-devtools</artifactId>
+			<scope>runtime</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
@@ -43,7 +48,7 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 				<configuration>
-					<skip>true</skip>
+					<skip>false</skip>
 				</configuration>
 			</plugin>
 		</plugins>
